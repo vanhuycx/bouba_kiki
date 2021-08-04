@@ -1,0 +1,21 @@
+su: ignoring --preserve-environment, it's mutually exclusive with --login
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.2     ✔ purrr   0.3.4
+✔ tibble  3.0.4     ✔ dplyr   1.0.2
+✔ tidyr   1.1.2     ✔ stringr 1.4.0
+✔ readr   1.3.1     ✔ forcats 0.5.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+
+Attaching package: ‘psychTestR’
+
+The following objects are masked from ‘package:utils’:
+
+    demo, page
+
+
+Listening on http://127.0.0.1:39145
+Warning: Error in observeEventExpr: object 'input' not found
+  58: observeEventExpr
+   1: runApp

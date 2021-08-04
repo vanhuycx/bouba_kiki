@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1618092841770.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3600389099",
+    "id" : "A8E3C877",
+    "lastKnownWriteTime" : 1618099157,
+    "last_content_update" : 1618099157075,
+    "path" : "/srv/shiny-server/psych/bouba_kiki_jd/app.R",
+    "project_path" : "app.R",
+    "properties" : {
+        "cursorPosition" : "18,0",
+        "docOutlineVisible" : "0",
+        "scrollLine" : "18"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

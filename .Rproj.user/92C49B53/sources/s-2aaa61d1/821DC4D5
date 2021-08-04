@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1618233787590.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "821DC4D5",
+    "lastKnownWriteTime" : 1628026496,
+    "last_content_update" : 1628026496974,
+    "path" : "~/ShinyApps/bouba_kiki_jd/new-timeline.js",
+    "project_path" : "new-timeline.js",
+    "properties" : {
+        "cursorPosition" : "165,20",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "js"
+}

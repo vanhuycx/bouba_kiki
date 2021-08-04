@@ -1,0 +1,15 @@
+function run_jspsych() {
+  jsPsych.init({
+    timeline: new_timeline(),
+    show_progress_bar:true,
+    auto_update_progress_bar: false,
+    display_element: 'js_psych',
+    on_finish: function() {
+      var json_data = jsPsych.data.get().json();
+      Shiny.onInputChange("jspsych_results", json_data);
+      //jsPsych.data.displayData();
+      next_page();
+    }
+  });
+}
+run_jspsych();

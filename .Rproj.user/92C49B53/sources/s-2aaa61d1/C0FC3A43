@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1618233750934.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C0FC3A43",
+    "lastKnownWriteTime" : 1628024964,
+    "last_content_update" : 1628024964289,
+    "path" : "~/ShinyApps/bouba_kiki_jd/app.R",
+    "project_path" : "app.R",
+    "properties" : {
+        "cursorPosition" : "82,30",
+        "scrollLine" : "67"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

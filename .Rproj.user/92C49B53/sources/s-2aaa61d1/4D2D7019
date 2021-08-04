@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1624720903176.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4D2D7019",
+    "lastKnownWriteTime" : 1625500770,
+    "last_content_update" : 1625500770727,
+    "path" : "~/ShinyApps/bouba_kiki_jd/www/css/style.css",
+    "project_path" : "www/css/style.css",
+    "properties" : {
+        "cursorPosition" : "6,21",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "css"
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1618234553958.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E2FB5171",
+    "lastKnownWriteTime" : 1628026556,
+    "last_content_update" : 1628026556135,
+    "path" : "~/ShinyApps/bouba_kiki_jd/run-jspsych.js",
+    "project_path" : "run-jspsych.js",
+    "properties" : {
+        "cursorPosition" : "17,46",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "js"
+}

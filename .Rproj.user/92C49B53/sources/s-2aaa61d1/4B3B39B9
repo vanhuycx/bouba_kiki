@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1618453248850.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4B3B39B9",
+    "lastKnownWriteTime" : 1624549592,
+    "last_content_update" : 1625085902286,
+    "path" : "~/ShinyApps/bouba_kiki_jd/readData.R",
+    "project_path" : "readData.R",
+    "properties" : {
+        "cursorPosition" : "8,4",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

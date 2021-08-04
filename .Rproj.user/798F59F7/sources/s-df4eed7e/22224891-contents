@@ -1,0 +1,124 @@
+
+function new_timeline() {
+  var timeline = [];
+  
+  // manually preload these files, since not on standard jspsych preload
+  var audio = ['sound/up2.wav']
+  
+  var preload = {
+    type: 'preload',
+    auto_preload: true,  // automatic preload of stimulus files
+    audio: audio  // manual preload of other files
+  };
+
+  var participant_ID = {
+		type: 'survey-html-form',
+		preamble: '<p>Please enter your participant ID</p>',
+		html: '<p><input name="ID" type="text"/></p>',
+    on_start: function() {
+        // set progress bar to 0 at the start of experiment
+        jsPsych.setProgressBar(0);
+    }
+	};
+
+  var instruction = {
+    type: 'html-button-response',
+    stimulus: '<div style="max-width:600px;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>',
+    choices: ['Continue'],
+    on_start: function() {
+        // set progress bar to 0 at the start of experiment
+        jsPsych.setProgressBar(0);
+    }
+  };
+  
+  var stimuli_array = [
+    { stimulus: 'sound/baba_rep.wav',image1:'img/bouba_7_L_white.png',image2:"img/kiki_7_L_white.png"},
+    { stimulus: 'sound/teetee.wav',image1:'img/bouba_3_L_white.png',image2:"img/kiki_3_L_white.png"},
+    { stimulus: 'sound/teetee.wav',image1:'img/bouba_7_S_white.png',image2:"img/kiki_7_S_white.png"},
+    { stimulus: 'sound/gaga_rep.wav',image1:'img/bouba_7_L_white.png',image2:"img/kiki_7_L_white.png"},
+
+    { stimulus: 'sound/gaga_rep.wav',image1:'img/bouba_3_S_white.png',image2:"img/kiki_3_S_white.png"},
+    { stimulus: 'sound/keekee.wav',image1:'img/bouba_3_L_white.png',image2:"img/kiki_3_L_white.png"},
+    { stimulus: 'sound/baba_rep.wav',image1:'img/bouba_3_L_white.png',image2:"img/kiki_3_L_white.png"},
+    { stimulus: 'sound/keekee.wav',image1:'img/bouba_3_S_white.png',image2:"img/kiki_3_S_white.png"},
+
+    { stimulus: 'sound/gaga_rep.wav',image1:'img/bouba_3_L_white.png',image2:"img/kiki_3_L_white.png"},
+    { stimulus: 'sound/teetee.wav',image1:'img/bouba_3_S_white.png',image2:"img/kiki_3_S_white.png"},
+    { stimulus: 'sound/baba_rep.wav',image1:'img/bouba_3_S_white.png',image2:"img/kiki_3_S_white.png"},
+    { stimulus: 'sound/keekee.wav',image1:'img/bouba_7_S_white.png',image2:"img/kiki_7_S_white.png"},
+
+    { stimulus: 'sound/teetee.wav',image1:'img/bouba_7_L_white.png',image2:"img/kiki_7_L_white.png"},
+    { stimulus: 'sound/teetee.wav',image1:'img/bouba_7_L_white.png',image2:"img/kiki_7_L_white.png"},
+    { stimulus: 'sound/teetee.wav',image1:'img/bouba_7_S_white.png',image2:"img/kiki_7_S_white.png"},
+    { stimulus: 'sound/gaga_rep.wav',image1:'img/bouba_7_S_white.png',image2:"img/kiki_7_L_white.png"},
+
+
+
+    { stimulus: 'sound/baba_rep.wav',image1:'img/bouba_7_L_white.png',image2:"img/kiki_7_L_white.png"},
+    { stimulus: 'sound/teetee.wav',image1:'img/bouba_3_L_white.png',image2:"img/kiki_3_L_white.png"},
+    { stimulus: 'sound/teetee.wav',image1:'img/bouba_7_S_white.png',image2:"img/kiki_7_S_white.png"},
+    { stimulus: 'sound/gaga_rep.wav',image1:'img/bouba_7_L_white.png',image2:"img/kiki_7_L_white.png"},
+
+    { stimulus: 'sound/gaga_rep.wav',image1:'img/bouba_3_S_white.png',image2:"img/kiki_3_S_white.png"},
+    { stimulus: 'sound/keekee.wav',image1:'img/bouba_3_L_white.png',image2:"img/kiki_3_L_white.png"},
+    { stimulus: 'sound/baba_rep.wav',image1:'img/bouba_3_L_white.png',image2:"img/kiki_3_L_white.png"},
+    { stimulus: 'sound/keekee.wav',image1:'img/bouba_3_S_white.png',image2:"img/kiki_3_S_white.png"},
+
+    { stimulus: 'sound/gaga_rep.wav',image1:'img/bouba_3_L_white.png',image2:"img/kiki_3_L_white.png"},
+    { stimulus: 'sound/teetee.wav',image1:'img/bouba_3_S_white.png',image2:"img/kiki_3_S_white.png"},
+    { stimulus: 'sound/baba_rep.wav',image1:'img/bouba_3_S_white.png',image2:"img/kiki_3_S_white.png"},
+    { stimulus: 'sound/keekee.wav',image1:'img/bouba_7_S_white.png',image2:"img/kiki_7_S_white.png"},
+
+    { stimulus: 'sound/teetee.wav',image1:'img/bouba_7_L_white.png',image2:"img/kiki_7_L_white.png"},
+    { stimulus: 'sound/teetee.wav',image1:'img/bouba_7_L_white.png',image2:"img/kiki_7_L_white.png"},
+    { stimulus: 'sound/teetee.wav',image1:'img/bouba_7_S_white.png',image2:"img/kiki_7_S_white.png"},
+    { stimulus: 'sound/gaga_rep.wav',image1:'img/bouba_7_S_white.png',image2:"img/kiki_7_L_white.png"},
+  ];
+
+  var n_trials = 32;
+
+  var trial = {
+    type: 'bouba-kiki',
+    upsound: 'sound/up2.wav',
+
+    stimulus: jsPsych.timelineVariable('stimulus'),
+    image:[jsPsych.timelineVariable('image1'),jsPsych.timelineVariable('image2')],
+    data: {
+      image: [jsPsych.timelineVariable('image1'),jsPsych.timelineVariable('image1')]
+    },
+    on_finish: function() {
+        // at the end of each trial, update the progress bar
+        // based on the current value and the proportion to update for each trial
+        var curr_progress_bar_value = jsPsych.getProgressBarCompleted();
+        jsPsych.setProgressBar(curr_progress_bar_value + (1/n_trials));
+    }
+  };
+
+  var test_procedure = {
+    timeline: [trial],
+    timeline_variables: stimuli_array,
+  };
+
+  // var count = 0;
+
+  // var block_set = {
+  //   timeline: [trial_1, trial_2],
+  //   loop_function: function() {
+  //     count++;
+  //     return count < 1;
+  //   }
+  // }
+  
+  var trial_1 = {
+    type: 'audio-keyboard-response',
+    stimulus: 'sound/up2.wav',
+    choices: ['KeyF','KeyJ'],
+    prompt: '<div style="width: 300px; height: 300px; background-color: #0000ff; display: inline-block;"></div>'+
+    '<p>Does the color match the word? (f or j)</p>'
+  };
+  
+  timeline.push(preload,participant_ID, instruction,test_procedure);
+
+
+  return timeline;
+}
